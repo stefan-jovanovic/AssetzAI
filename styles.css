@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #ffd700;
+    background: #000000;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+header .logo img {
+    height: 60px;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    text-align: center;
+}
+
+.coming-soon-message {
+    margin-bottom: 20px;
+}
+
+.glowing-text {
+    font-size: 80px;
+    margin-bottom: 20px;
+    color: #ffd700;
+    text-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700, 0 0 30px #ffd700, 0 0 40px #ffd700, 0 0 50px #ffd700;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700, 0 0 30px #ffd700, 0 0 40px #ffd700, 0 0 50px #ffd700;
+    }
+    to {
+        text-shadow: 0 0 20px #ffd700, 0 0 30px #ffd700, 0 0 40px #ffd700, 0 0 50px #ffd700, 0 0 60px #ffd700;
+    }
+}
+
+.flashing-text {
+    font-size: 24px;
+    margin: 10px 0;
+    animation: flash 1.5s linear infinite;
+}
+
+@keyframes flash {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+footer {
+    background: #333333;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+}
