@@ -12,8 +12,8 @@ function createKeyword(keyword) {
     span.className = 'keyword';
     span.textContent = keyword;
     
-    const randomTop = Math.random() * 80 + 10; // Ensure the keywords don't appear in the center
-    const randomLeft = Math.random() * 80 + 10;
+    const randomTop = Math.random() * 20 + (Math.random() > 0.5 ? 80 : 0); // Only around the edges
+    const randomLeft = Math.random() * 20 + (Math.random() > 0.5 ? 80 : 0);
     
     span.style.top = randomTop + '%';
     span.style.left = randomLeft + '%';
